@@ -1,0 +1,9 @@
+ls -lrt
+
+mkdir -p /tmp/May
+
+
+for i in `ls -lrt | grep "Sep 21" | awk '{print $9}' `; do cp -p $i* /home/Admin/sep/21; done
+for i in `ls -lrt | grep "Sep 22" | awk '{print $9}' `; do cp -p $i* /home/Admin/sep/21; done
+for i in `ls -lrt | grep "Sep 23" | awk '{print $9}' `; do cp -p $i* /home/Admin/sep/21; done
+
